@@ -1,0 +1,210 @@
+============================================================
+      LAPORAN DETAIL MODEL: IndoGovBERT
+============================================================
+
+[1] SPESIFIKASI ARSITEKTUR
+    - Embedding Model   : IndoGovBERT
+    - UMAP Config       : Neigh=15, Comp=5
+    - HDBSCAN Config    : MinCluster=15
+    - Vectorizer        : Ngram=(1, 1)
+    - Stopwords Applied : YA (74 kata)
+    - Device Run        : CUDA
+
+[2] HASIL EVALUASI
+    - Jumlah Topik      : 103
+    - Coherence NPMI    : 0.1392
+    - Coherence Cv      : 0.6566
+    - Topic Diversity   : 0.6194
+
+[3] DAFTAR TOPIK (Untuk Analisis Manual PESTLE)
+------------------------------------------------------------
+[TOPIK #0] - Jumlah Berita: 431
+Keywords: gratis, bergizi, makan, badan, nasional, jelaskan, gizi, bgn, program, mbg
+Analisis PESTLE:
+[ ] Political
+[ ] Economic
+[ ] Social
+[ ] Technological
+[ ] Legal
+[ ] Environmental
+----------------------------------------
+[TOPIK #1] - Jumlah Berita: 337
+Keywords: siswa, kecamatan, sekolah, dapur, sd, bergizi, gratis, kota, makan, smp
+Analisis PESTLE:
+[ ] Political
+[ ] Economic
+[ ] Social
+[ ] Technological
+[ ] Legal
+[ ] Environmental
+----------------------------------------
+[TOPIK #2] - Jumlah Berita: 308
+Keywords: masyarakat, gizi, sosialisasi, generasi, program, sehat, anak, ri, dpr, stunting
+Analisis PESTLE:
+[ ] Political
+[ ] Economic
+[ ] Social
+[ ] Technological
+[ ] Legal
+[ ] Environmental
+----------------------------------------
+[TOPIK #3] - Jumlah Berita: 218
+Keywords: polri, polda, sppg, kapolri, polres, pol, sigit, kapolda, mendukung, irjen
+Analisis PESTLE:
+[ ] Political
+[ ] Economic
+[ ] Social
+[ ] Technological
+[ ] Legal
+[ ] Environmental
+----------------------------------------
+[TOPIK #4] - Jumlah Berita: 178
+Keywords: prabowo, juta, presiden, subianto, anak, makan, terima, mencapai, indonesia, penerima
+Analisis PESTLE:
+[ ] Political
+[ ] Economic
+[ ] Social
+[ ] Technological
+[ ] Legal
+[ ] Environmental
+----------------------------------------
+[TOPIK #5] - Jumlah Berita: 167
+Keywords: stunting, ibu, balita, hamil, keluarga, posyandu, bkkbn, menyusui, angka, wihaji
+Analisis PESTLE:
+[ ] Political
+[ ] Economic
+[ ] Social
+[ ] Technological
+[ ] Legal
+[ ] Environmental
+----------------------------------------
+[TOPIK #6] - Jumlah Berita: 142
+Keywords: umkm, usaha, bri, maman, pembiayaan, koperasi, pelaku, mikro, bank, kur
+Analisis PESTLE:
+[ ] Political
+[ ] Economic
+[ ] Social
+[ ] Technological
+[ ] Legal
+[ ] Environmental
+----------------------------------------
+[TOPIK #7] - Jumlah Berita: 140
+Keywords: tray, babi, food, ompreng, produk, impor, halal, minyak, mengandung, nampan
+Analisis PESTLE:
+[ ] Political
+[ ] Economic
+[ ] Social
+[ ] Technological
+[ ] Legal
+[ ] Environmental
+----------------------------------------
+[TOPIK #8] - Jumlah Berita: 131
+Keywords: siswa, sakit, keracunan, mengalami, gejala, mual, muntah, rumah, menyantap, pusing
+Analisis PESTLE:
+[ ] Political
+[ ] Economic
+[ ] Social
+[ ] Technological
+[ ] Legal
+[ ] Environmental
+----------------------------------------
+[TOPIK #9] - Jumlah Berita: 122
+Keywords: pendidikan, anak, program, meningkatkan, makanan, gizi, sekolah, indonesia, kesehatan, kualitas
+Analisis PESTLE:
+[ ] Political
+[ ] Economic
+[ ] Social
+[ ] Technological
+[ ] Legal
+[ ] Environmental
+----------------------------------------
+[TOPIK #10] - Jumlah Berita: 120
+Keywords: sampah, limbah, sisa, lingkungan, organik, pengelolaan, waste, maggot, ton, makanan
+Analisis PESTLE:
+[ ] Political
+[ ] Economic
+[ ] Social
+[ ] Technological
+[ ] Legal
+[ ] Environmental
+----------------------------------------
+[TOPIK #11] - Jumlah Berita: 114
+Keywords: halal, sertifikasi, bpjph, produk, haikal, jaminan, sertifikat, penyelia, proses, kehalalan
+Analisis PESTLE:
+[ ] Political
+[ ] Economic
+[ ] Social
+[ ] Technological
+[ ] Legal
+[ ] Environmental
+----------------------------------------
+[TOPIK #12] - Jumlah Berita: 110
+Keywords: tersangka, pidana, hukum, korupsi, putusan, hakim, perkara, terdakwa, kpk, pengadilan
+Analisis PESTLE:
+[ ] Political
+[ ] Economic
+[ ] Social
+[ ] Technological
+[ ] Legal
+[ ] Environmental
+----------------------------------------
+[TOPIK #13] - Jumlah Berita: 91
+Keywords: harga, inflasi, ayam, kenaikan, ras, telur, komoditas, pangan, permintaan, pasar
+Analisis PESTLE:
+[ ] Political
+[ ] Economic
+[ ] Social
+[ ] Technological
+[ ] Legal
+[ ] Environmental
+----------------------------------------
+[TOPIK #14] - Jumlah Berita: 87
+Keywords: politik, tni, aksi, kebijakan, sipil, militer, prabowo, publik, media, pemerintahan
+Analisis PESTLE:
+[ ] Political
+[ ] Economic
+[ ] Social
+[ ] Technological
+[ ] Legal
+[ ] Environmental
+----------------------------------------
+[TOPIK #15] - Jumlah Berita: 84
+Keywords: sosialisasi, gizi, masyarakat, dpr, program, ri, sehat, ix, generasi, komisi
+Analisis PESTLE:
+[ ] Political
+[ ] Economic
+[ ] Social
+[ ] Technological
+[ ] Legal
+[ ] Environmental
+----------------------------------------
+[TOPIK #16] - Jumlah Berita: 83
+Keywords: puasa, ramadan, tetap, pulang, selama, menu, berbuka, kurma, dibawa, bulan
+Analisis PESTLE:
+[ ] Political
+[ ] Economic
+[ ] Social
+[ ] Technological
+[ ] Legal
+[ ] Environmental
+----------------------------------------
+[TOPIK #17] - Jumlah Berita: 81
+Keywords: bukan, negara, publik, justru, kebijakan, politik, anak, hanya, sekadar, sistem
+Analisis PESTLE:
+[ ] Political
+[ ] Economic
+[ ] Social
+[ ] Technological
+[ ] Legal
+[ ] Environmental
+----------------------------------------
+[TOPIK #18] - Jumlah Berita: 79
+Keywords: triliun, anggaran, juta, penerima, dadan, realisasi, mencapai, purbaya, akhir, penyerapan
+Analisis PESTLE:
+[ ] Political
+[ ] Economic
+[ ] Social
+[ ] Technological
+[ ] Legal
+[ ] Environmental
+----------------------------------------

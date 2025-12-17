@@ -1,0 +1,729 @@
+============================================================
+      LAPORAN HYBRID TOPIC MODELING (LDA-Guided BERTopic)
+============================================================
+
+[1] ARSITEKTUR & METODOLOGI
+    - Device Run        : CUDA (NVIDIA GeForce RTX 3050 Laptop GPU)
+    - Clustering Engine : LDA (Gensim) - 25 Topik
+    - Representation    : BERTopic (c-TF-IDF) with IndoGovBERT
+    - Embedding Model   : just-108/IndoGovBERT-Wirawans-FT-C3
+    - Bigram Mode       : NON-AKTIF
+    - Alignment Strategy: Pre-filtered Sync (Docs & Tokens matched)
+
+[2] HASIL EVALUASI
+    - Coherence NPMI    : 0.1455
+    - Coherence Cv      : 0.6644
+    - Diversity         : 0.6944
+
+[3] DAFTAR TOPIK HYBRID (Analisis PESTLE)
+------------------------------------------------------------
+[HYBRID TOPIK #0] - Jumlah Berita: 1269
+Keywords: program, gizi, masyarakat, anak, generasi, sehat, bergizi, mbg, mendukung, sppg
+Analisis PESTLE:
+[ ] Political
+[ ] Economic
+[ ] Social
+[ ] Technological
+[ ] Legal
+[ ] Environmental
+----------------------------------------
+[HYBRID TOPIK #1] - Jumlah Berita: 876
+Keywords: juta, triliun, penerima, dadan, anggaran, manfaat, mencapai, prabowo, bgn, mbg
+Analisis PESTLE:
+[ ] Political
+[ ] Economic
+[ ] Social
+[ ] Technological
+[ ] Legal
+[ ] Environmental
+----------------------------------------
+[HYBRID TOPIK #2] - Jumlah Berita: 840
+Keywords: sekolah, mbg, menu, makanan, makan, kalau, anak, siswa, jadi, gratis
+Analisis PESTLE:
+[ ] Political
+[ ] Economic
+[ ] Social
+[ ] Technological
+[ ] Legal
+[ ] Environmental
+----------------------------------------
+[HYBRID TOPIK #3] - Jumlah Berita: 761
+Keywords: dapur, sppg, kecamatan, sekolah, siswa, kota, kabupaten, program, sd, bergizi
+Analisis PESTLE:
+[ ] Political
+[ ] Economic
+[ ] Social
+[ ] Technological
+[ ] Legal
+[ ] Environmental
+----------------------------------------
+[HYBRID TOPIK #4] - Jumlah Berita: 687
+Keywords: program, mbg, anggaran, pengawasan, pemerintah, kebijakan, publik, makanan, gizi, harus
+Analisis PESTLE:
+[ ] Political
+[ ] Economic
+[ ] Social
+[ ] Technological
+[ ] Legal
+[ ] Environmental
+----------------------------------------
+[HYBRID TOPIK #5] - Jumlah Berita: 637
+Keywords: siswa, menu, sekolah, anak, makan, makanan, program, bergizi, hari, gratis
+Analisis PESTLE:
+[ ] Political
+[ ] Economic
+[ ] Social
+[ ] Technological
+[ ] Legal
+[ ] Environmental
+----------------------------------------
+[HYBRID TOPIK #6] - Jumlah Berita: 533
+Keywords: keracunan, siswa, kasus, korban, mengalami, sakit, gejala, makanan, mbg, muntah
+Analisis PESTLE:
+[ ] Political
+[ ] Economic
+[ ] Social
+[ ] Technological
+[ ] Legal
+[ ] Environmental
+----------------------------------------
+[HYBRID TOPIK #7] - Jumlah Berita: 518
+Keywords: keamanan, makanan, standar, pangan, keracunan, sppg, pengawasan, kesehatan, bahan, mbg
+Analisis PESTLE:
+[ ] Political
+[ ] Economic
+[ ] Social
+[ ] Technological
+[ ] Legal
+[ ] Environmental
+----------------------------------------
+[HYBRID TOPIK #8] - Jumlah Berita: 497
+Keywords: umkm, lokal, ekonomi, pangan, program, usaha, petani, desa, bahan, koperasi
+Analisis PESTLE:
+[ ] Political
+[ ] Economic
+[ ] Social
+[ ] Technological
+[ ] Legal
+[ ] Environmental
+----------------------------------------
+[HYBRID TOPIK #9] - Jumlah Berita: 440
+Keywords: anggaran, triliun, belanja, efisiensi, apbn, tahun, sebesar, pendidikan, kementerian, keuangan
+Analisis PESTLE:
+[ ] Political
+[ ] Economic
+[ ] Social
+[ ] Technological
+[ ] Legal
+[ ] Environmental
+----------------------------------------
+[HYBRID TOPIK #10] - Jumlah Berita: 411
+Keywords: anak, gizi, kesehatan, sehat, pendidikan, sekolah, makanan, program, indonesia, stunting
+Analisis PESTLE:
+[ ] Political
+[ ] Economic
+[ ] Social
+[ ] Technological
+[ ] Legal
+[ ] Environmental
+----------------------------------------
+[HYBRID TOPIK #11] - Jumlah Berita: 332
+Keywords: gratis, bergizi, makan, jelaskan, cari, program, detail, indonesia, badan, gizi
+Analisis PESTLE:
+[ ] Political
+[ ] Economic
+[ ] Social
+[ ] Technological
+[ ] Legal
+[ ] Environmental
+----------------------------------------
+[HYBRID TOPIK #12] - Jumlah Berita: 289
+Keywords: yayasan, ira, mitra, kalibata, harly, dana, bgn, pembayaran, mbn, dapur
+Analisis PESTLE:
+[ ] Political
+[ ] Economic
+[ ] Social
+[ ] Technological
+[ ] Legal
+[ ] Environmental
+----------------------------------------
+[HYBRID TOPIK #13] - Jumlah Berita: 216
+Keywords: stunting, balita, ibu, hamil, kelompok, keluarga, posyandu, menyusui, bkkbn, angka
+Analisis PESTLE:
+[ ] Political
+[ ] Economic
+[ ] Social
+[ ] Technological
+[ ] Legal
+[ ] Environmental
+----------------------------------------
+[HYBRID TOPIK #14] - Jumlah Berita: 209
+Keywords: bukan, politik, kebijakan, publik, negara, rakyat, sosial, hanya, justru, anak
+Analisis PESTLE:
+[ ] Political
+[ ] Economic
+[ ] Social
+[ ] Technological
+[ ] Legal
+[ ] Environmental
+----------------------------------------
+[HYBRID TOPIK #15] - Jumlah Berita: 201
+Keywords: korupsi, hukum, kpk, tersangka, putusan, kasus, pidana, pengadilan, hakim, perkara
+Analisis PESTLE:
+[ ] Political
+[ ] Economic
+[ ] Social
+[ ] Technological
+[ ] Legal
+[ ] Environmental
+----------------------------------------
+[HYBRID TOPIK #16] - Jumlah Berita: 165
+Keywords: inflasi, harga, ayam, kenaikan, persen, pangan, telur, ras, komoditas, pasar
+Analisis PESTLE:
+[ ] Political
+[ ] Economic
+[ ] Social
+[ ] Technological
+[ ] Legal
+[ ] Environmental
+----------------------------------------
+[HYBRID TOPIK #17] - Jumlah Berita: 149
+Keywords: sampah, limbah, sisa, lingkungan, organik, pengelolaan, waste, makanan, ton, food
+Analisis PESTLE:
+[ ] Political
+[ ] Economic
+[ ] Social
+[ ] Technological
+[ ] Legal
+[ ] Environmental
+----------------------------------------
+[HYBRID TOPIK #18] - Jumlah Berita: 127
+Keywords: susu, protein, serangga, menu, kandungan, makanan, anak, produk, vitamin, gizi
+Analisis PESTLE:
+[ ] Political
+[ ] Economic
+[ ] Social
+[ ] Technological
+[ ] Legal
+[ ] Environmental
+----------------------------------------
+[HYBRID TOPIK #19] - Jumlah Berita: 126
+Keywords: halal, sertifikasi, produk, bpjph, sertifikat, haikal, jaminan, proses, kehalalan, usaha
+Analisis PESTLE:
+[ ] Political
+[ ] Economic
+[ ] Social
+[ ] Technological
+[ ] Legal
+[ ] Environmental
+----------------------------------------
+[HYBRID TOPIK #20] - Jumlah Berita: 89
+Keywords: partai, politik, prabowo, pemerintahan, gerindra, presiden, golkar, rakyat, pdip, jokowi
+Analisis PESTLE:
+[ ] Political
+[ ] Economic
+[ ] Social
+[ ] Technological
+[ ] Legal
+[ ] Environmental
+----------------------------------------
+[HYBRID TOPIK #21] - Jumlah Berita: 85
+Keywords: digital, teknologi, inovasi, digitalisasi, pengembangan, ipb, industri, pangan, indonesia, berbasis
+Analisis PESTLE:
+[ ] Political
+[ ] Economic
+[ ] Social
+[ ] Technological
+[ ] Legal
+[ ] Environmental
+----------------------------------------
+[HYBRID TOPIK #22] - Jumlah Berita: 82
+Keywords: tray, ompreng, food, impor, minyak, babi, nampan, produk, stainless, negeri
+Analisis PESTLE:
+[ ] Political
+[ ] Economic
+[ ] Social
+[ ] Technological
+[ ] Legal
+[ ] Environmental
+----------------------------------------
+[HYBRID TOPIK #23] - Jumlah Berita: 71
+Keywords: perpres, zulhas, tata, kelola, kementerian, presiden, aturan, koordinasi, penyelenggaraan, peraturan
+Analisis PESTLE:
+[ ] Political
+[ ] Economic
+[ ] Social
+[ ] Technological
+[ ] Legal
+[ ] Environmental
+----------------------------------------
+[HYBRID TOPIK #24] - Jumlah Berita: 65
+Keywords: daerah, pembangunan, lahan, kemendagri, sppg, mendagri, lokasi, titik, kepri, pemda
+Analisis PESTLE:
+[ ] Political
+[ ] Economic
+[ ] Social
+[ ] Technological
+[ ] Legal
+[ ] Environmental
+----------------------------------------
+[HYBRID TOPIK #25] - Jumlah Berita: 49
+Keywords: indonesia, india, ekonomi, pertanian, sektor, negara, energi, global, selandia, ekspor
+Analisis PESTLE:
+[ ] Political
+[ ] Economic
+[ ] Social
+[ ] Technological
+[ ] Legal
+[ ] Environmental
+----------------------------------------
+[HYBRID TOPIK #26] - Jumlah Berita: 48
+Keywords: puasa, ramadan, pulang, tetap, dibawa, selama, berbuka, kurma, dadan, ramadhan
+Analisis PESTLE:
+[ ] Political
+[ ] Economic
+[ ] Social
+[ ] Technological
+[ ] Legal
+[ ] Environmental
+----------------------------------------
+[HYBRID TOPIK #27] - Jumlah Berita: 47
+Keywords: iklan, sumenep, gratis, makan, sini, bergizi, berita, korban, paket, dadan
+Analisis PESTLE:
+[ ] Political
+[ ] Economic
+[ ] Social
+[ ] Technological
+[ ] Legal
+[ ] Environmental
+----------------------------------------
+[HYBRID TOPIK #28] - Jumlah Berita: 45
+Keywords: prabowo, presiden, subianto, gratis, indonesia, hashim, bergizi, makan, program, gagasan
+Analisis PESTLE:
+[ ] Political
+[ ] Economic
+[ ] Social
+[ ] Technological
+[ ] Legal
+[ ] Environmental
+----------------------------------------
+[HYBRID TOPIK #29] - Jumlah Berita: 44
+Keywords: umkm, maman, bank, usaha, pembiayaan, mitra, modal, bri, permodalan, mikro
+Analisis PESTLE:
+[ ] Political
+[ ] Economic
+[ ] Social
+[ ] Technological
+[ ] Legal
+[ ] Environmental
+----------------------------------------
+[HYBRID TOPIK #30] - Jumlah Berita: 44
+Keywords: produk, halal, babi, marshmallow, bpjph, bpom, mengandung, baki, sertifikasi, kehalalan
+Analisis PESTLE:
+[ ] Political
+[ ] Economic
+[ ] Social
+[ ] Technological
+[ ] Legal
+[ ] Environmental
+----------------------------------------
+[HYBRID TOPIK #31] - Jumlah Berita: 42
+Keywords: ahli, cucun, gizi, profesi, persagi, lulusan, tenaga, syamsurijal, dpr, sarjana
+Analisis PESTLE:
+[ ] Political
+[ ] Economic
+[ ] Social
+[ ] Technological
+[ ] Legal
+[ ] Environmental
+----------------------------------------
+[HYBRID TOPIK #32] - Jumlah Berita: 41
+Keywords: tni, aksi, sipil, pulau, militer, mahasiswa, undang, gambar, gelap, tambang
+Analisis PESTLE:
+[ ] Political
+[ ] Economic
+[ ] Social
+[ ] Technological
+[ ] Legal
+[ ] Environmental
+----------------------------------------
+[HYBRID TOPIK #33] - Jumlah Berita: 39
+Keywords: mitra, dokumen, pendaftaran, npwp, resmi, calon, bgn, lokasi, usaha, email
+Analisis PESTLE:
+[ ] Political
+[ ] Economic
+[ ] Social
+[ ] Technological
+[ ] Legal
+[ ] Environmental
+----------------------------------------
+[HYBRID TOPIK #34] - Jumlah Berita: 37
+Keywords: menu, gram, kalori, susu, protein, kebutuhan, mg, kkal, anak, gizi
+Analisis PESTLE:
+[ ] Political
+[ ] Economic
+[ ] Social
+[ ] Technological
+[ ] Legal
+[ ] Environmental
+----------------------------------------
+[HYBRID TOPIK #35] - Jumlah Berita: 33
+Keywords: prabowo, terima, rakyat, dunia, kasih, indonesia, presiden, ucapkan, pimpinan, pemimpin
+Analisis PESTLE:
+[ ] Political
+[ ] Economic
+[ ] Social
+[ ] Technological
+[ ] Legal
+[ ] Environmental
+----------------------------------------
+[HYBRID TOPIK #36] - Jumlah Berita: 32
+Keywords: prabowo, gates, bill, presiden, forbes, gratis, makan, anak, indonesia, program
+Analisis PESTLE:
+[ ] Political
+[ ] Economic
+[ ] Social
+[ ] Technological
+[ ] Legal
+[ ] Environmental
+----------------------------------------
+[HYBRID TOPIK #37] - Jumlah Berita: 30
+Keywords: seleksi, sppi, batch, rekrutmen, ijazah, surat, pendaftaran, pk, asn, cpns
+Analisis PESTLE:
+[ ] Political
+[ ] Economic
+[ ] Social
+[ ] Technological
+[ ] Legal
+[ ] Environmental
+----------------------------------------
+[HYBRID TOPIK #38] - Jumlah Berita: 28
+Keywords: bansos, tahap, bantuan, kuliah, pkh, ii, semester, kemensos, bpnt, cek
+Analisis PESTLE:
+[ ] Political
+[ ] Economic
+[ ] Social
+[ ] Technological
+[ ] Legal
+[ ] Environmental
+----------------------------------------
+[HYBRID TOPIK #39] - Jumlah Berita: 28
+Keywords: jateng, luthfi, tengah, gubernur, jawa, unit, aset, kalteng, sppg, semarang
+Analisis PESTLE:
+[ ] Political
+[ ] Economic
+[ ] Social
+[ ] Technological
+[ ] Legal
+[ ] Environmental
+----------------------------------------
+[HYBRID TOPIK #40] - Jumlah Berita: 27
+Keywords: panrb, tata, rini, kelola, perpres, kementerian, koordinasi, penguatan, kelembagaan, menteri
+Analisis PESTLE:
+[ ] Political
+[ ] Economic
+[ ] Social
+[ ] Technological
+[ ] Legal
+[ ] Environmental
+----------------------------------------
+[HYBRID TOPIK #41] - Jumlah Berita: 26
+Keywords: gaza, israel, ghf, bantuan, palestina, warga, tewas, kemanusiaan, pbb, hamas
+Analisis PESTLE:
+[ ] Political
+[ ] Economic
+[ ] Social
+[ ] Technological
+[ ] Legal
+[ ] Environmental
+----------------------------------------
+[HYBRID TOPIK #42] - Jumlah Berita: 26
+Keywords: partai, mardiono, ummat, dpc, muskercab, dpw, pengurus, muktamar, ketua, dpd
+Analisis PESTLE:
+[ ] Political
+[ ] Economic
+[ ] Social
+[ ] Technological
+[ ] Legal
+[ ] Environmental
+----------------------------------------
+[HYBRID TOPIK #43] - Jumlah Berita: 25
+Keywords: investasi, ekonomi, pertumbuhan, honda, indonesia, hijau, mendorong, pemerintah, kadin, memperkuat
+Analisis PESTLE:
+[ ] Political
+[ ] Economic
+[ ] Social
+[ ] Technological
+[ ] Legal
+[ ] Environmental
+----------------------------------------
+[HYBRID TOPIK #44] - Jumlah Berita: 25
+Keywords: inflasi, pengendalian, gnpip, pangan, bi, tpid, pasokan, harga, daerah, balinusra
+Analisis PESTLE:
+[ ] Political
+[ ] Economic
+[ ] Social
+[ ] Technological
+[ ] Legal
+[ ] Environmental
+----------------------------------------
+[HYBRID TOPIK #45] - Jumlah Berita: 23
+Keywords: papua, pelajar, aksi, jayawijaya, yahukimo, menolak, penolakan, intan, gratis, wamena
+Analisis PESTLE:
+[ ] Political
+[ ] Economic
+[ ] Social
+[ ] Technological
+[ ] Legal
+[ ] Environmental
+----------------------------------------
+[HYBRID TOPIK #46] - Jumlah Berita: 23
+Keywords: kalteng, reza, palangka, pena, aplikasi, raya, dinas, pendidikan, operator, kota
+Analisis PESTLE:
+[ ] Political
+[ ] Economic
+[ ] Social
+[ ] Technological
+[ ] Legal
+[ ] Environmental
+----------------------------------------
+[HYBRID TOPIK #47] - Jumlah Berita: 22
+Keywords: pln, summarecon, listrik, pt, bumn, dssp, masyarakat, imigrasi, tjsl, power
+Analisis PESTLE:
+[ ] Political
+[ ] Economic
+[ ] Social
+[ ] Technological
+[ ] Legal
+[ ] Environmental
+----------------------------------------
+[HYBRID TOPIK #48] - Jumlah Berita: 21
+Keywords: libur, selama, sekolah, dadan, mentah, tetap, bgn, liburan, siswa, masa
+Analisis PESTLE:
+[ ] Political
+[ ] Economic
+[ ] Social
+[ ] Technological
+[ ] Legal
+[ ] Environmental
+----------------------------------------
+[HYBRID TOPIK #49] - Jumlah Berita: 21
+Keywords: bakomsus, bizhare, polri, keahlian, kapolri, asuransi, merekrut, pejaten, bri, bidang
+Analisis PESTLE:
+[ ] Political
+[ ] Economic
+[ ] Social
+[ ] Technological
+[ ] Legal
+[ ] Environmental
+----------------------------------------
+[HYBRID TOPIK #50] - Jumlah Berita: 20
+Keywords: zakat, sultan, dana, usulan, fakir, baznas, pembiayaan, miskin, ketua, dpd
+Analisis PESTLE:
+[ ] Political
+[ ] Economic
+[ ] Social
+[ ] Technological
+[ ] Legal
+[ ] Environmental
+----------------------------------------
+[HYBRID TOPIK #51] - Jumlah Berita: 20
+Keywords: kadin, anindya, gotong, royong, satgas, scan, pilot, project, handojo, muhammadiyah
+Analisis PESTLE:
+[ ] Political
+[ ] Economic
+[ ] Social
+[ ] Technological
+[ ] Legal
+[ ] Environmental
+----------------------------------------
+[HYBRID TOPIK #52] - Jumlah Berita: 19
+Keywords: kaesang, psi, partai, pks, muzzammil, presiden, prabowo, bapak, yayasan, pangarep
+Analisis PESTLE:
+[ ] Political
+[ ] Economic
+[ ] Social
+[ ] Technological
+[ ] Legal
+[ ] Environmental
+----------------------------------------
+[HYBRID TOPIK #53] - Jumlah Berita: 18
+Keywords: aplikasi, gopay, saldo, pengguna, top, up, ovo, pemeriksaan, transaksi, satusehat
+Analisis PESTLE:
+[ ] Political
+[ ] Economic
+[ ] Social
+[ ] Technological
+[ ] Legal
+[ ] Environmental
+----------------------------------------
+[HYBRID TOPIK #54] - Jumlah Berita: 18
+Keywords: mentah, basiro, ciputat, bentuk, yasmit, bahan, siswa, tangerang, libur, disimpan
+Analisis PESTLE:
+[ ] Political
+[ ] Economic
+[ ] Social
+[ ] Technological
+[ ] Legal
+[ ] Environmental
+----------------------------------------
+[HYBRID TOPIK #55] - Jumlah Berita: 17
+Keywords: berlangganan, insight, paper, artikel, akun, business, google, premium, tabloid, bundling
+Analisis PESTLE:
+[ ] Political
+[ ] Economic
+[ ] Social
+[ ] Technological
+[ ] Legal
+[ ] Environmental
+----------------------------------------
+[HYBRID TOPIK #56] - Jumlah Berita: 17
+Keywords: luhut, yahya, den, arief, pbnu, nu, kemiskinan, gus, istana, binsar
+Analisis PESTLE:
+[ ] Political
+[ ] Economic
+[ ] Social
+[ ] Technological
+[ ] Legal
+[ ] Environmental
+----------------------------------------
+[HYBRID TOPIK #57] - Jumlah Berita: 16
+Keywords: lokal, roti, umkm, produk, upf, nugget, edar, sosis, burger, mengutamakan
+Analisis PESTLE:
+[ ] Political
+[ ] Economic
+[ ] Social
+[ ] Technological
+[ ] Legal
+[ ] Environmental
+----------------------------------------
+[HYBRID TOPIK #58] - Jumlah Berita: 16
+Keywords: brasil, lula, prabowo, brazil, presiden, silva, indonesia, da, bilateral, planalto
+Analisis PESTLE:
+[ ] Political
+[ ] Economic
+[ ] Social
+[ ] Technological
+[ ] Legal
+[ ] Environmental
+----------------------------------------
+[HYBRID TOPIK #59] - Jumlah Berita: 16
+Keywords: tni, ad, pelatihan, singapura, polri, prajurit, angkatan, darat, manajemen, militer
+Analisis PESTLE:
+[ ] Political
+[ ] Economic
+[ ] Social
+[ ] Technological
+[ ] Legal
+[ ] Environmental
+----------------------------------------
+[HYBRID TOPIK #60] - Jumlah Berita: 14
+Keywords: papua, sulawesi, barat, utara, kalimantan, jawa, timur, selatan, dapur, riau
+Analisis PESTLE:
+[ ] Political
+[ ] Economic
+[ ] Social
+[ ] Technological
+[ ] Legal
+[ ] Environmental
+----------------------------------------
+[HYBRID TOPIK #61] - Jumlah Berita: 14
+Keywords: kemasan, santap, libur, redy, hari, paket, siap, selama, kombinasi, makanan
+Analisis PESTLE:
+[ ] Political
+[ ] Economic
+[ ] Social
+[ ] Technological
+[ ] Legal
+[ ] Environmental
+----------------------------------------
+[HYBRID TOPIK #62] - Jumlah Berita: 14
+Keywords: setuju, belum, palu, kapan, krayan, program, yoperi, gratis, seberapa, bontang
+Analisis PESTLE:
+[ ] Political
+[ ] Economic
+[ ] Social
+[ ] Technological
+[ ] Legal
+[ ] Environmental
+----------------------------------------
+[HYBRID TOPIK #63] - Jumlah Berita: 14
+Keywords: pu, karya, pembangunan, dapur, persero, pt, lokasi, kementerian, bumn, dody
+Analisis PESTLE:
+[ ] Political
+[ ] Economic
+[ ] Social
+[ ] Technological
+[ ] Legal
+[ ] Environmental
+----------------------------------------
+[HYBRID TOPIK #64] - Jumlah Berita: 14
+Keywords: kpk, pagu, setyo, baku, dadan, kemahalan, masing, bahan, anggaran, laporan
+Analisis PESTLE:
+[ ] Political
+[ ] Economic
+[ ] Social
+[ ] Technological
+[ ] Legal
+[ ] Environmental
+----------------------------------------
+[HYBRID TOPIK #65] - Jumlah Berita: 13
+Keywords: bpom, babel, ikrar, dilibatkan, kep, mou, badan, pom, kesepahaman, taruna
+Analisis PESTLE:
+[ ] Political
+[ ] Economic
+[ ] Social
+[ ] Technological
+[ ] Legal
+[ ] Environmental
+----------------------------------------
+[HYBRID TOPIK #66] - Jumlah Berita: 12
+Keywords: papua, pelajar, hak, aksi, penjual, hukum, pasal, isnur, undang, gugatan
+Analisis PESTLE:
+[ ] Political
+[ ] Economic
+[ ] Social
+[ ] Technological
+[ ] Legal
+[ ] Environmental
+----------------------------------------
+[HYBRID TOPIK #67] - Jumlah Berita: 12
+Keywords: swasta, mk, pendidikan, dasar, putusan, sekolah, undang, memungut, konstitusi, negeri
+Analisis PESTLE:
+[ ] Political
+[ ] Economic
+[ ] Social
+[ ] Technological
+[ ] Legal
+[ ] Environmental
+----------------------------------------
+[HYBRID TOPIK #68] - Jumlah Berita: 12
+Keywords: mentah, libur, bashiro, bahan, yasmit, beras, paket, mbg, dadan, tangerang
+Analisis PESTLE:
+[ ] Political
+[ ] Economic
+[ ] Social
+[ ] Technological
+[ ] Legal
+[ ] Environmental
+----------------------------------------
+[HYBRID TOPIK #69] - Jumlah Berita: 11
+Keywords: panti, nasdem, partai, bantuan, gerindra, kegiatan, medan, harlah, asuhan, kepedulian
+Analisis PESTLE:
+[ ] Political
+[ ] Economic
+[ ] Social
+[ ] Technological
+[ ] Legal
+[ ] Environmental
+----------------------------------------
+[HYBRID TOPIK #70] - Jumlah Berita: 10
+Keywords: aceh, lahan, boby, nasir, banda, minimal, sekda, kusuma, plt, kabupaten
+Analisis PESTLE:
+[ ] Political
+[ ] Economic
+[ ] Social
+[ ] Technological
+[ ] Legal
+[ ] Environmental
+----------------------------------------

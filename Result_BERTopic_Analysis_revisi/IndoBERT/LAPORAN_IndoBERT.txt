@@ -1,0 +1,210 @@
+============================================================
+      LAPORAN DETAIL MODEL: IndoBERT
+============================================================
+
+[1] SPESIFIKASI ARSITEKTUR
+    - Embedding Model   : IndoBERT
+    - UMAP Config       : Neigh=15, Comp=5
+    - HDBSCAN Config    : MinCluster=15
+    - Vectorizer        : Ngram=(1, 1)
+    - Stopwords Applied : YA (74 kata)
+    - Device Run        : CUDA
+
+[2] HASIL EVALUASI
+    - Jumlah Topik      : 92
+    - Coherence NPMI    : 0.1324
+    - Coherence Cv      : 0.6531
+    - Topic Diversity   : 0.6467
+
+[3] DAFTAR TOPIK (Untuk Analisis Manual PESTLE)
+------------------------------------------------------------
+[TOPIK #0] - Jumlah Berita: 2407
+Keywords: program, anak, mbg, makanan, indonesia, pemerintah, pangan, gizi, sekolah, makan
+Analisis PESTLE:
+[ ] Political
+[ ] Economic
+[ ] Social
+[ ] Technological
+[ ] Legal
+[ ] Environmental
+----------------------------------------
+[TOPIK #1] - Jumlah Berita: 223
+Keywords: jelaskan, gratis, cari, bergizi, detail, makan, tv, badan, berlangganan, nasional
+Analisis PESTLE:
+[ ] Political
+[ ] Economic
+[ ] Social
+[ ] Technological
+[ ] Legal
+[ ] Environmental
+----------------------------------------
+[TOPIK #2] - Jumlah Berita: 207
+Keywords: sosialisasi, masyarakat, gizi, generasi, sehat, dpr, ri, program, ix, anggota
+Analisis PESTLE:
+[ ] Political
+[ ] Economic
+[ ] Social
+[ ] Technological
+[ ] Legal
+[ ] Environmental
+----------------------------------------
+[TOPIK #3] - Jumlah Berita: 196
+Keywords: keracunan, siswa, sakit, mengalami, gejala, mual, muntah, puskesmas, diduga, korban
+Analisis PESTLE:
+[ ] Political
+[ ] Economic
+[ ] Social
+[ ] Technological
+[ ] Legal
+[ ] Environmental
+----------------------------------------
+[TOPIK #4] - Jumlah Berita: 125
+Keywords: bpom, keracunan, makanan, kasus, taruna, kejadian, keamanan, pangan, ikrar, kontaminasi
+Analisis PESTLE:
+[ ] Political
+[ ] Economic
+[ ] Social
+[ ] Technological
+[ ] Legal
+[ ] Environmental
+----------------------------------------
+[TOPIK #5] - Jumlah Berita: 120
+Keywords: ira, yayasan, kalibata, mbn, harly, mitra, danna, dana, pihak, penggelapan
+Analisis PESTLE:
+[ ] Political
+[ ] Economic
+[ ] Social
+[ ] Technological
+[ ] Legal
+[ ] Environmental
+----------------------------------------
+[TOPIK #6] - Jumlah Berita: 118
+Keywords: stunting, ibu, balita, hamil, keluarga, bkkbn, posyandu, menyusui, anak, angka
+Analisis PESTLE:
+[ ] Political
+[ ] Economic
+[ ] Social
+[ ] Technological
+[ ] Legal
+[ ] Environmental
+----------------------------------------
+[TOPIK #7] - Jumlah Berita: 100
+Keywords: halal, sertifikasi, bpjph, produk, haikal, jaminan, sertifikat, proses, penyelia, penyelenggara
+Analisis PESTLE:
+[ ] Political
+[ ] Economic
+[ ] Social
+[ ] Technological
+[ ] Legal
+[ ] Environmental
+----------------------------------------
+[TOPIK #8] - Jumlah Berita: 98
+Keywords: icw, mbg, publik, program, politik, pemerintah, anggaran, bukan, pengawasan, seharusnya
+Analisis PESTLE:
+[ ] Political
+[ ] Economic
+[ ] Social
+[ ] Technological
+[ ] Legal
+[ ] Environmental
+----------------------------------------
+[TOPIK #9] - Jumlah Berita: 92
+Keywords: kegiatan, babinsa, siswa, sdn, sekolah, polsek, anak, koramil, tk, kecamatan
+Analisis PESTLE:
+[ ] Political
+[ ] Economic
+[ ] Social
+[ ] Technological
+[ ] Legal
+[ ] Environmental
+----------------------------------------
+[TOPIK #10] - Jumlah Berita: 82
+Keywords: dapur, kecamatan, siswa, sekolah, kota, belum, mbg, kudus, sd, kabupaten
+Analisis PESTLE:
+[ ] Political
+[ ] Economic
+[ ] Social
+[ ] Technological
+[ ] Legal
+[ ] Environmental
+----------------------------------------
+[TOPIK #11] - Jumlah Berita: 81
+Keywords: protein, anak, susu, gizi, makanan, makan, sehat, kebutuhan, kalori, menu
+Analisis PESTLE:
+[ ] Political
+[ ] Economic
+[ ] Social
+[ ] Technological
+[ ] Legal
+[ ] Environmental
+----------------------------------------
+[TOPIK #12] - Jumlah Berita: 81
+Keywords: keamanan, pangan, makanan, pengawasan, standar, aman, kesehatan, pelatihan, memastikan, penjamah
+Analisis PESTLE:
+[ ] Political
+[ ] Economic
+[ ] Social
+[ ] Technological
+[ ] Legal
+[ ] Environmental
+----------------------------------------
+[TOPIK #13] - Jumlah Berita: 80
+Keywords: siswa, sekolah, senang, anak, kelas, menu, belajar, makan, program, sdn
+Analisis PESTLE:
+[ ] Political
+[ ] Economic
+[ ] Social
+[ ] Technological
+[ ] Legal
+[ ] Environmental
+----------------------------------------
+[TOPIK #14] - Jumlah Berita: 73
+Keywords: babi, produk, halal, ompreng, minyak, tray, mengandung, food, bpom, sni
+Analisis PESTLE:
+[ ] Political
+[ ] Economic
+[ ] Social
+[ ] Technological
+[ ] Legal
+[ ] Environmental
+----------------------------------------
+[TOPIK #15] - Jumlah Berita: 72
+Keywords: sampah, sisa, limbah, lingkungan, waste, organik, ton, pengelolaan, makanan, food
+Analisis PESTLE:
+[ ] Political
+[ ] Economic
+[ ] Social
+[ ] Technological
+[ ] Legal
+[ ] Environmental
+----------------------------------------
+[TOPIK #16] - Jumlah Berita: 70
+Keywords: inflasi, harga, ayam, ras, telur, kenaikan, komoditas, pangan, permintaan, bps
+Analisis PESTLE:
+[ ] Political
+[ ] Economic
+[ ] Social
+[ ] Technological
+[ ] Legal
+[ ] Environmental
+----------------------------------------
+[TOPIK #17] - Jumlah Berita: 65
+Keywords: belatung, tambakboyo, siswa, menu, ulat, makanan, viral, tuban, guru, sekolah
+Analisis PESTLE:
+[ ] Political
+[ ] Economic
+[ ] Social
+[ ] Technological
+[ ] Legal
+[ ] Environmental
+----------------------------------------
+[TOPIK #18] - Jumlah Berita: 64
+Keywords: polda, polri, polres, pol, kapolda, sppg, pembangunan, kapolres, mendukung, kombes
+Analisis PESTLE:
+[ ] Political
+[ ] Economic
+[ ] Social
+[ ] Technological
+[ ] Legal
+[ ] Environmental
+----------------------------------------

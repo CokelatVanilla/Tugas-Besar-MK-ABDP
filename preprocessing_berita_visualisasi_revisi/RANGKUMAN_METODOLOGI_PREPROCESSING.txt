@@ -1,0 +1,57 @@
+======================================================================
+       LAPORAN & METODOLOGI PREPROCESSING DATA BERITA
+======================================================================
+
+[1] ALUR PROSES (PIPELINE)
+    Proses preprocessing dilakukan dengan tahapan berikut:
+    1. Filtering Status  : Menghapus data yang gagal di-scrape ('Status_Scrape' != 'Sukses').
+    2. Deduplikasi       : Menghapus data ganda berdasarkan isi konten yang persis sama.
+    3. Lowercasing       : Mengubah semua huruf menjadi kecil.
+    4. Regex Cleaning    : Menghapus URL, Email, HTML Tags, dan Angka.
+    5. Punctuation Removal: Menghapus tanda baca secara total (diganti spasi).
+                           Tujuan: Mencegah error pada perhitungan metrik NPMI.
+    6. Noise Filtering   : Menghapus kata navigasi web spesifik (contoh: 'baca juga', 'halaman').
+    7. Elongation Fix    : Normalisasi kata berulang (contoh: 'hallooo' -> 'halo').
+
+[2] JUSTIFIKASI METODOLOGI (MENGAPA LIGHT CLEANING?)
+    - Mengapa Stopwords (yang, dan, di, tidak) DIPERTAHANKAN?
+      Model Topic Modeling yang digunakan (BERTopic) berbasis Transformer/BERT.
+      Model BERT membutuhkan struktur kalimat yang utuh (termasuk kata sambung)
+      untuk memahami konteks semantik (seperti negasi atau hubungan waktu).
+      Penghapusan stopwords dilakukan terpisah di tahap Vectorizer (c-TF-IDF).
+
+[3] PERBANDINGAN STATISTIK DATA
+    METRIK                    | SEBELUM (RAW)   | SESUDAH (CLEAN)
+-----------------------------------------------------------------
+    Total Dokumen             | 11411           | 11411          
+    Total Kata (Est)          | 4620369         | 4387290        
+    Rata-rata Kata/Dok        | 404.90          | 384.48         
+    Ukuran Vocabulary         | 103355          | 39023          
+
+[4] SAMPEL DATA (BEFORE vs AFTER)
+    Berikut adalah contoh perubahan teks pada 5 dokumen acak:
+----------------------------------------------------------------------
+    Contoh #1:
+    [RAW]   : Bloomberg Technoz, Jakarta - Badan Pangan Nasional (Bapanas) menyebut tengah berkolaborasi dengan pemerintah Denmark untuk mengembangkan kampanye stop boros pangan, menumbuhkan kesadaran pada anak sek...
+    [CLEAN] : bloomberg technoz badan pangan nasional bapanas menyebut tengah berkolaborasi dengan pemerintah denmark untuk mengembangkan kampanye stop boros pangan menumbuhkan kesadaran pada anak sekolah hal berka...
+----------------------------------------------------------------------
+    Contoh #2:
+    [RAW]   : Wamen LH Tinjau SPPG Halim: Gizi Anak Terpenuhi, Sampah Terkelola  Nomor: SR.233/HUMAS/KLH-BPLH/9/2025    Jakarta, 19 September 2025 — Program Makanan Bergizi Gratis (MBG) bukan hanya memastikan gizi ...
+    [CLEAN] : wamen lh tinjau sppg halim gizi anak terpenuhi sampah terkelola nomor sr humas klh bplh september program makanan bergizi gratis mbg bukan hanya memastikan gizi anak sekolah terpenuhi tetapi mendorong...
+----------------------------------------------------------------------
+    Contoh #3:
+    [RAW]   : ‎KBRN, Malinau : Pelaksanaan perdana Program Makan Bergizi Gratis (MBG) di SMPN 2 Malinau oleh Satuan Pelayanan Pemenuhan Gizi (SPPG) Muhammadiyah dimulai pada Senin (24/11/2025). Sebanyak 427 siswa t...
+    [CLEAN] : kbrn malinau pelaksanaan perdana program makan bergizi gratis mbg di smpn malinau oleh satuan pelayanan pemenuhan gizi sppg muhammadiyah dimulai pada sebanyak siswa tercatat sebagai penerima manfaat m...
+----------------------------------------------------------------------
+    Contoh #4:
+    [RAW]   : SIGAPNEWS.CO.ID | PADANG - Kepala Seksi Pidana Umum (Kasi Pidum) Kejaksaan Negeri (Kejari) Padang, Budi Sastera, S.H., M.H., resmi diusulkan masuk nominasi Adhyaksa Award 2025 kategori Jaksa Penggerak...
+    [CLEAN] : sigapnews padang kepala seksi pidana umum kasi pidum kejaksaan negeri kejari padang budi sastera s h m h resmi diusulkan masuk nominasi adhyaksa award kategori jaksa penggerak keadilan restoratif nama...
+----------------------------------------------------------------------
+    Contoh #5:
+    [RAW]   : Oleh : Zahra Lestari Nur  Editor : Ida Bastian  Lintastotabuan.com – Program makan bergizi gratis menjadi salah satu inisiatif yang diyakini mampu memberikan dampak positif bagi pertumbuhan ekonomi da...
+    [CLEAN] : oleh zahra lestari nur ida bastian lintastotabuan program makan bergizi gratis menjadi salah satu inisiatif yang diyakini mampu memberikan dampak positif bagi pertumbuhan ekonomi dan kesejahteraan mas...
+----------------------------------------------------------------------
+
+[5] INSIGHT & VALIDASI
+    - Deduplikasi dilakukan untuk menghindari bias topik pada berita viral.
+    - Teks bersih siap digunakan untuk embedding IndoBERT/IndoGovBERT.

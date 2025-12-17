@@ -1,0 +1,277 @@
+============================================================
+      LAPORAN EKSPERIMEN TOPIC MODELING (LDA)
+============================================================
+
+[1] SPESIFIKASI MODEL & METODOLOGI
+    - Metode              : Latent Dirichlet Allocation (LDA)
+    - Library             : Gensim
+    - Input Preprocessing : Stopword Removal (Heavy Cleaning) + Filter Extremes
+    - Random Seed         : 42
+
+[2] HASIL TUNING (KOMPARASI JUMLAH TOPIK)
+ Num_Topics     NPMI       Cv  Diversity
+         10 0.034921 0.482848   0.620000
+         15 0.039127 0.491529   0.626667
+         20 0.043660 0.504056   0.575000
+         25 0.051135 0.507707   0.580000
+         30 0.049699 0.505943   0.563333
+         35 0.045489 0.505982   0.548571
+         40 0.040155 0.492047   0.572500
+
+[3] PERFORMA MODEL TERBAIK (SELECTED MODEL)
+    - Jumlah Topik (K)  : 25
+    - Coherence NPMI    : 0.0511
+    - Coherence Cv      : 0.5077
+    - Topic Diversity   : 0.5800
+============================================================
+
+[TOPIK #0]
+Keywords: ahli, bgn, nanik, lokal, menu, pangan, sppg, cucun, dapur, masyarakat, produk, tenaga, presiden, umkm, ekonomi
+Analisis PESTLE (Silakan Centang):
+[ ] Political (Kebijakan, Partai, Tokoh)
+[ ] Economic (Anggaran, Harga, Pasar)
+[ ] Social (Masyarakat, Gizi, Kesehatan)
+[ ] Technological (Sistem, Data, Aplikasi)
+[ ] Legal (Hukum, Aturan, Sanksi)
+[ ] Environmental (Limbah, Lingkungan)
+----------------------------------------
+[TOPIK #1]
+Keywords: siswa, menu, kelas, siang, sdn, guru, negeri, kepala, murid, menerima, salah, porsi, disajikan, orang_tua, pelaksanaan
+Analisis PESTLE (Silakan Centang):
+[ ] Political (Kebijakan, Partai, Tokoh)
+[ ] Economic (Anggaran, Harga, Pasar)
+[ ] Social (Masyarakat, Gizi, Kesehatan)
+[ ] Technological (Sistem, Data, Aplikasi)
+[ ] Legal (Hukum, Aturan, Sanksi)
+[ ] Environmental (Limbah, Lingkungan)
+----------------------------------------
+[TOPIK #2]
+Keywords: bgn, kepala, wakil, publik, masyarakat, informasi, komunikasi, nanik, resmi, surat, presiden, pan, insentif, daerah, kegiatan
+Analisis PESTLE (Silakan Centang):
+[ ] Political (Kebijakan, Partai, Tokoh)
+[ ] Economic (Anggaran, Harga, Pasar)
+[ ] Social (Masyarakat, Gizi, Kesehatan)
+[ ] Technological (Sistem, Data, Aplikasi)
+[ ] Legal (Hukum, Aturan, Sanksi)
+[ ] Environmental (Limbah, Lingkungan)
+----------------------------------------
+[TOPIK #3]
+Keywords: stunting, balita, kegiatan, kota, bantuan, hamil_menyusui, keluarga, desa, kecamatan, hamil, masyarakat, kepala, posyandu, kabupaten, pemberian
+Analisis PESTLE (Silakan Centang):
+[ ] Political (Kebijakan, Partai, Tokoh)
+[ ] Economic (Anggaran, Harga, Pasar)
+[ ] Social (Masyarakat, Gizi, Kesehatan)
+[ ] Technological (Sistem, Data, Aplikasi)
+[ ] Legal (Hukum, Aturan, Sanksi)
+[ ] Environmental (Limbah, Lingkungan)
+----------------------------------------
+[TOPIK #4]
+Keywords: pelaksanaan, daerah, pengawasan, presiden, bgn, tata_kelola, pangan, terkait, keracunan, evaluasi, kementerian, kesehatan, sistem, berjalan, lembaga
+Analisis PESTLE (Silakan Centang):
+[ ] Political (Kebijakan, Partai, Tokoh)
+[ ] Economic (Anggaran, Harga, Pasar)
+[ ] Social (Masyarakat, Gizi, Kesehatan)
+[ ] Technological (Sistem, Data, Aplikasi)
+[ ] Legal (Hukum, Aturan, Sanksi)
+[ ] Environmental (Limbah, Lingkungan)
+----------------------------------------
+[TOPIK #5]
+Keywords: produk, halal, food_tray, impor, ompreng, industri, negeri, sertifikasi_halal, bpjph, produksi, penggunaan, proses, bahan, china, lokal
+Analisis PESTLE (Silakan Centang):
+[ ] Political (Kebijakan, Partai, Tokoh)
+[ ] Economic (Anggaran, Harga, Pasar)
+[ ] Social (Masyarakat, Gizi, Kesehatan)
+[ ] Technological (Sistem, Data, Aplikasi)
+[ ] Legal (Hukum, Aturan, Sanksi)
+[ ] Environmental (Limbah, Lingkungan)
+----------------------------------------
+[TOPIK #6]
+Keywords: menu, susu, sehat, sampah, bahan, sisa, lingkungan, protein, ikan, pangan, limbah, kesehatan, seimbang, siswa, konsumsi
+Analisis PESTLE (Silakan Centang):
+[ ] Political (Kebijakan, Partai, Tokoh)
+[ ] Economic (Anggaran, Harga, Pasar)
+[ ] Social (Masyarakat, Gizi, Kesehatan)
+[ ] Technological (Sistem, Data, Aplikasi)
+[ ] Legal (Hukum, Aturan, Sanksi)
+[ ] Environmental (Limbah, Lingkungan)
+----------------------------------------
+[TOPIK #7]
+Keywords: umkm, pangan, bpom, mitra, dapur, usaha, pelaku_usaha, pelatihan, proses, keamanan, bgn, masyarakat, sertifikasi, kepala, produk
+Analisis PESTLE (Silakan Centang):
+[ ] Political (Kebijakan, Partai, Tokoh)
+[ ] Economic (Anggaran, Harga, Pasar)
+[ ] Social (Masyarakat, Gizi, Kesehatan)
+[ ] Technological (Sistem, Data, Aplikasi)
+[ ] Legal (Hukum, Aturan, Sanksi)
+[ ] Environmental (Limbah, Lingkungan)
+----------------------------------------
+[TOPIK #8]
+Keywords: dana, korupsi, kpk, anggaran, persen, uang, kepala, miliar, keuangan, terkait, laporan, daerah, bgn, negara, survei
+Analisis PESTLE (Silakan Centang):
+[ ] Political (Kebijakan, Partai, Tokoh)
+[ ] Economic (Anggaran, Harga, Pasar)
+[ ] Social (Masyarakat, Gizi, Kesehatan)
+[ ] Technological (Sistem, Data, Aplikasi)
+[ ] Legal (Hukum, Aturan, Sanksi)
+[ ] Environmental (Limbah, Lingkungan)
+----------------------------------------
+[TOPIK #9]
+Keywords: dapur, bgn, mitra, yayasan, sppg, dana, pembayaran, porsi, operasional, laporan, ira, sistem, kalibata, kepala, uang
+Analisis PESTLE (Silakan Centang):
+[ ] Political (Kebijakan, Partai, Tokoh)
+[ ] Economic (Anggaran, Harga, Pasar)
+[ ] Social (Masyarakat, Gizi, Kesehatan)
+[ ] Technological (Sistem, Data, Aplikasi)
+[ ] Legal (Hukum, Aturan, Sanksi)
+[ ] Environmental (Limbah, Lingkungan)
+----------------------------------------
+[TOPIK #10]
+Keywords: desa, presiden, rakyat, koperasi, pemerintahan, mendukung, prabowo, dukungan, masyarakat, partai, pembangunan, politik, menteri, prabowo_subianto, ekonomi
+Analisis PESTLE (Silakan Centang):
+[ ] Political (Kebijakan, Partai, Tokoh)
+[ ] Economic (Anggaran, Harga, Pasar)
+[ ] Social (Masyarakat, Gizi, Kesehatan)
+[ ] Technological (Sistem, Data, Aplikasi)
+[ ] Legal (Hukum, Aturan, Sanksi)
+[ ] Environmental (Limbah, Lingkungan)
+----------------------------------------
+[TOPIK #11]
+Keywords: keracunan, siswa, korban, orang, kesehatan, mengalami, kejadian, menu, diduga, kabupaten, menyantap, kepala, keracunan_massal, kota, sakit
+Analisis PESTLE (Silakan Centang):
+[ ] Political (Kebijakan, Partai, Tokoh)
+[ ] Economic (Anggaran, Harga, Pasar)
+[ ] Social (Masyarakat, Gizi, Kesehatan)
+[ ] Technological (Sistem, Data, Aplikasi)
+[ ] Legal (Hukum, Aturan, Sanksi)
+[ ] Environmental (Limbah, Lingkungan)
+----------------------------------------
+[TOPIK #12]
+Keywords: pangan, harga, inflasi, bahan, petani, daerah, pertanian, pasar, persen, lokal, beras, produksi, masyarakat, pasokan, komoditas
+Analisis PESTLE (Silakan Centang):
+[ ] Political (Kebijakan, Partai, Tokoh)
+[ ] Economic (Anggaran, Harga, Pasar)
+[ ] Social (Masyarakat, Gizi, Kesehatan)
+[ ] Technological (Sistem, Data, Aplikasi)
+[ ] Legal (Hukum, Aturan, Sanksi)
+[ ] Environmental (Limbah, Lingkungan)
+----------------------------------------
+[TOPIK #13]
+Keywords: dapur, sppg, mendukung, pemenuhan, polri, masyarakat, siswa, satuan_pelayanan, wilayah, kualitas, kecamatan, pembangunan, sehat, penerima_manfaat, kota
+Analisis PESTLE (Silakan Centang):
+[ ] Political (Kebijakan, Partai, Tokoh)
+[ ] Economic (Anggaran, Harga, Pasar)
+[ ] Social (Masyarakat, Gizi, Kesehatan)
+[ ] Technological (Sistem, Data, Aplikasi)
+[ ] Legal (Hukum, Aturan, Sanksi)
+[ ] Environmental (Limbah, Lingkungan)
+----------------------------------------
+[TOPIK #14]
+Keywords: hukum, warga, negara, masyarakat, tni, mahasiswa, aksi, putusan, undang_undang, hak, proses, nomor, kebijakan, militer, terkait
+Analisis PESTLE (Silakan Centang):
+[ ] Political (Kebijakan, Partai, Tokoh)
+[ ] Economic (Anggaran, Harga, Pasar)
+[ ] Social (Masyarakat, Gizi, Kesehatan)
+[ ] Technological (Sistem, Data, Aplikasi)
+[ ] Legal (Hukum, Aturan, Sanksi)
+[ ] Environmental (Limbah, Lingkungan)
+----------------------------------------
+[TOPIK #15]
+Keywords: kebijakan, pangan, negara, ekonomi, masyarakat, lokal, sistem, sosial, pendidikan, publik, distribusi, meningkatkan, daerah, kualitas, data
+Analisis PESTLE (Silakan Centang):
+[ ] Political (Kebijakan, Partai, Tokoh)
+[ ] Economic (Anggaran, Harga, Pasar)
+[ ] Social (Masyarakat, Gizi, Kesehatan)
+[ ] Technological (Sistem, Data, Aplikasi)
+[ ] Legal (Hukum, Aturan, Sanksi)
+[ ] Environmental (Limbah, Lingkungan)
+----------------------------------------
+[TOPIK #16]
+Keywords: kota, kabupaten, sppg, kecamatan, siswa, kepala, dinas, bengkulu, pelaksanaan, dapur, aceh, bupati, daerah, yogyakarta, bekasi
+Analisis PESTLE (Silakan Centang):
+[ ] Political (Kebijakan, Partai, Tokoh)
+[ ] Economic (Anggaran, Harga, Pasar)
+[ ] Social (Masyarakat, Gizi, Kesehatan)
+[ ] Technological (Sistem, Data, Aplikasi)
+[ ] Legal (Hukum, Aturan, Sanksi)
+[ ] Environmental (Limbah, Lingkungan)
+----------------------------------------
+[TOPIK #17]
+Keywords: prabowo, presiden, juta, prabowo_subianto, orang, negara, salah, media_sosial, mencapai, rakyat, menyebut, akun, serangga, publik, uang
+Analisis PESTLE (Silakan Centang):
+[ ] Political (Kebijakan, Partai, Tokoh)
+[ ] Economic (Anggaran, Harga, Pasar)
+[ ] Social (Masyarakat, Gizi, Kesehatan)
+[ ] Technological (Sistem, Data, Aplikasi)
+[ ] Legal (Hukum, Aturan, Sanksi)
+[ ] Environmental (Limbah, Lingkungan)
+----------------------------------------
+[TOPIK #18]
+Keywords: sppg, bgn, dadan, juta, penerima_manfaat, kepala, dapur, pemenuhan, satuan_pelayanan, dadan_hindayana, orang, target, daerah, mencapai, ribu
+Analisis PESTLE (Silakan Centang):
+[ ] Political (Kebijakan, Partai, Tokoh)
+[ ] Economic (Anggaran, Harga, Pasar)
+[ ] Social (Masyarakat, Gizi, Kesehatan)
+[ ] Technological (Sistem, Data, Aplikasi)
+[ ] Legal (Hukum, Aturan, Sanksi)
+[ ] Environmental (Limbah, Lingkungan)
+----------------------------------------
+[TOPIK #19]
+Keywords: anggaran, triliun, pendidikan, juta, bgn, dana, mencapai, penerima_manfaat, penerima, tambahan, dadan, kementerian, apbn, alokasi, presiden
+Analisis PESTLE (Silakan Centang):
+[ ] Political (Kebijakan, Partai, Tokoh)
+[ ] Economic (Anggaran, Harga, Pasar)
+[ ] Social (Masyarakat, Gizi, Kesehatan)
+[ ] Technological (Sistem, Data, Aplikasi)
+[ ] Legal (Hukum, Aturan, Sanksi)
+[ ] Environmental (Limbah, Lingkungan)
+----------------------------------------
+[TOPIK #20]
+Keywords: sppg, dapur, standar, pangan, keracunan, keamanan, bahan, proses, bgn, kesehatan, kualitas, menu, pengawasan, aman, sesuai
+Analisis PESTLE (Silakan Centang):
+[ ] Political (Kebijakan, Partai, Tokoh)
+[ ] Economic (Anggaran, Harga, Pasar)
+[ ] Social (Masyarakat, Gizi, Kesehatan)
+[ ] Technological (Sistem, Data, Aplikasi)
+[ ] Legal (Hukum, Aturan, Sanksi)
+[ ] Environmental (Limbah, Lingkungan)
+----------------------------------------
+[TOPIK #21]
+Keywords: masyarakat, meningkatkan, sehat, kualitas, kesehatan, lokal, daerah, mendukung, diharapkan, ekonomi, stunting, bgn, peningkatan, generasi, kerja
+Analisis PESTLE (Silakan Centang):
+[ ] Political (Kebijakan, Partai, Tokoh)
+[ ] Economic (Anggaran, Harga, Pasar)
+[ ] Social (Masyarakat, Gizi, Kesehatan)
+[ ] Technological (Sistem, Data, Aplikasi)
+[ ] Legal (Hukum, Aturan, Sanksi)
+[ ] Environmental (Limbah, Lingkungan)
+----------------------------------------
+[TOPIK #22]
+Keywords: dapur, sppg, kabupaten, daerah, papua, pembangunan, wilayah, kota, provinsi, lokasi, kepala, bgn, kecamatan, barat, pemenuhan
+Analisis PESTLE (Silakan Centang):
+[ ] Political (Kebijakan, Partai, Tokoh)
+[ ] Economic (Anggaran, Harga, Pasar)
+[ ] Social (Masyarakat, Gizi, Kesehatan)
+[ ] Technological (Sistem, Data, Aplikasi)
+[ ] Legal (Hukum, Aturan, Sanksi)
+[ ] Environmental (Limbah, Lingkungan)
+----------------------------------------
+[TOPIK #23]
+Keywords: anggaran, prabowo, presiden, triliun, negara, efisiensi, ekonomi, daerah, belanja, juta, persen, apbn, kementerian, kebijakan, prabowo_subianto
+Analisis PESTLE (Silakan Centang):
+[ ] Political (Kebijakan, Partai, Tokoh)
+[ ] Economic (Anggaran, Harga, Pasar)
+[ ] Social (Masyarakat, Gizi, Kesehatan)
+[ ] Technological (Sistem, Data, Aplikasi)
+[ ] Legal (Hukum, Aturan, Sanksi)
+[ ] Environmental (Limbah, Lingkungan)
+----------------------------------------
+[TOPIK #24]
+Keywords: kesehatan, masyarakat, aplikasi, sosial, bantuan, digital, keluarga, data, kegiatan, tahap, layanan, bri, sehat, informasi, pendidikan
+Analisis PESTLE (Silakan Centang):
+[ ] Political (Kebijakan, Partai, Tokoh)
+[ ] Economic (Anggaran, Harga, Pasar)
+[ ] Social (Masyarakat, Gizi, Kesehatan)
+[ ] Technological (Sistem, Data, Aplikasi)
+[ ] Legal (Hukum, Aturan, Sanksi)
+[ ] Environmental (Limbah, Lingkungan)
+----------------------------------------

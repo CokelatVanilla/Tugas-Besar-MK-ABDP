@@ -1,0 +1,26 @@
+============================================================
+      LAPORAN PERBANDINGAN MODEL BERTOPIC (SUMMARY)
+============================================================
+
+[1] SKEMA EKSPERIMEN
+    - Tujuan            : Membandingkan kualitas topik dari 3 model embedding berbeda.
+    - Model Diuji       : IndoGovBERT, IndoBERT, Multilingual-MiniLM
+    - Metrik Utama      : NPMI (Normalized Pointwise Mutual Information)
+    - Parameter Fixed   : UMAP(n=15), HDBSCAN(min=15), Vectorizer(ngram=1, stopwords=YES)
+
+[2] TABEL HASIL KOMPARASI
+              Model  Jml_Topik  Coherence_Cv  Coherence_NPMI  Diversity
+        IndoGovBERT        103        0.6566          0.1392     0.6194
+           IndoBERT         92        0.6531          0.1324     0.6467
+Multilingual-MiniLM        102        0.6131          0.1104     0.6255
+
+[3] KESIMPULAN & PEMENANG
+    - Model Terbaik     : IndoGovBERT
+    - Skor NPMI         : 0.1392
+    - Skor Cv           : 0.6566
+    - Diversity         : 0.6194
+
+[4] ANALISIS SINGKAT
+    Model 'IndoGovBERT' terpilih karena memiliki skor NPMI tertinggi,
+    yang mengindikasikan bahwa topik-topik yang dihasilkannya memiliki koherensi
+    semantik yang paling kuat dan mudah diinterpretasikan manusia dibandingkan model lainnya.
