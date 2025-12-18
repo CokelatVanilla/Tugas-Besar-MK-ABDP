@@ -11,6 +11,7 @@
 
 ## 📋 Daftar Isi
 - Latar Belakang
+- Studi Literatur
 - Metodologi
 - Arsitektur Model
 - Evaluasi Model
@@ -27,6 +28,49 @@ Di era digital, diskursus publik di media daring berfungsi sebagai sensor sosial
 Kesenjangan penelitian (research gap) terlihat pada minimnya studi yang mengintegrasikan model bahasa modern berbasis Transformer dengan kerangka pengawasan hukum preventif, khususnya dalam konteks keamanan pangan di Indonesia. Model LDA klasik memiliki keterbatasan dalam menangkap konteks semantik yang kompleks, sementara model Deep Learning murni sering kali membutuhkan komputasi berat dan sulit diinterpretasikan (black box). Belum ada penelitian yang secara spesifik menerapkan arsitektur hibrida untuk memetakan potensi pelanggaran hukum dalam program nasional berskala besar seperti MBG.
 Untuk menjembatani kesenjangan tersebut, penelitian ini mengusulkan pendekatan baru menggunakan model Hybrid LDA-Guided BERTopic. Model ini menggabungkan interpretabilitas struktur topik global dari LDA dengan akurasi representasi semantik lokal dari model embedding khusus domain pemerintahan (IndoGovBERT). Pendekatan ini dirancang untuk mendeteksi sinyal lemah (weak signals) terkait isu hukum—seperti pola pemberitaan keracunan berulang atau indikasi korupsi yayasan—yang sering luput dari pengawasan makro.
 Tujuan utama dari penelitian ini adalah mendemonstrasikan efektivitas arsitektur hibrida dalam mengekstraksi intelijen hukum dari data teks berita, serta memetakan isu-isu tersebut menggunakan kerangka kerja PESTLE (Political, Economic, Social, Technological, Legal, Environmental). Kontribusi utama penelitian ini terletak pada pengembangan metodologi pengawasan berbasis data (data-driven surveillance) yang dapat diadopsi oleh regulator untuk mendeteksi risiko hukum dan keamanan pangan secara dini, sehingga memungkinkan respons kebijakan yang lebih cepat dan terukur. </p>
+
+---
+
+## 📖 Studi Literatur
+
+### 1. Pengawasan Hukum Keamanan Pangan dalam Program Publik
+<p align="justify">Keamanan pangan merupakan aspek fundamental dalam penyelenggaraan program publik yang berorientasi pada pemenuhan kebutuhan dasar masyarakat. Dalam konteks Indonesia, keamanan pangan tidak hanya berkaitan dengan kualitas dan kelayakan konsumsi makanan, tetapi juga mencakup aspek hukum, tata kelola, dan pertanggungjawaban negara terhadap risiko kesehatan masyarakat. Undang-Undang Nomor 18 Tahun 2012 tentang Pangan menegaskan bahwa negara memiliki kewajiban untuk menjamin keamanan, mutu, dan gizi pangan yang dikonsumsi oleh masyarakat.
+Program Makan Bergizi Gratis (MBG) sebagai program nasional berskala besar menghadirkan tantangan pengawasan yang kompleks. Skala distribusi yang masif, keterlibatan banyak pihak (pemerintah pusat, daerah, mitra swasta, dan UMKM), serta keterbatasan sumber daya pengawas lapangan meningkatkan potensi terjadinya pelanggaran keamanan pangan dan penyimpangan tata kelola. Dalam kondisi tersebut, pendekatan pengawasan konvensional yang mengandalkan inspeksi fisik dan laporan manual menjadi kurang memadai untuk mendeteksi risiko secara dini.
+Literatur terkini menekankan pentingnya pendekatan pengawasan preventif (preventive surveillance), yaitu mekanisme yang mampu mengidentifikasi indikasi awal pelanggaran sebelum berdampak luas [1]. Dalam konteks ini, data digital—khususnya berita daring dan diskursus publik—dapat berfungsi sebagai indikator awal (early signals) terhadap permasalahan keamanan pangan dan hukum yang muncul di lapangan.</p>
+
+### 2. Natural Language Processing (NLP) dalam Analisis Kebijakan Publik
+<p align="justify">Natural Language Processing (NLP) merupakan cabang kecerdasan buatan yang berfokus pada pemrosesan dan pemahaman bahasa manusia dalam bentuk teks [2]. Dalam beberapa tahun terakhir, NLP telah banyak digunakan dalam kajian kebijakan publik untuk menganalisis opini masyarakat, framing media, serta dinamika wacana politik dan hukum.
+Penelitian oleh Abdurrohim dan Rahman (2024) menunjukkan bahwa analisis sentimen berbasis NLP mampu mengungkap respons publik terhadap kebijakan kontroversial seperti Omnibus Law [3]. Studi lain memanfaatkan teknik klasifikasi teks untuk mengelompokkan dokumen hukum dan peraturan secara otomatis [4]. Namun, sebagian besar penelitian tersebut masih berfokus pada analisis sentimen atau klasifikasi supervised, yang membutuhkan label manual dan sering kali tidak mampu menangkap kompleksitas isu kebijakan yang bersifat multidimensional.
+Dalam konteks pengawasan kebijakan publik, pendekatan unsupervised seperti topic modeling menjadi relevan karena mampu mengidentifikasi pola isu tanpa pelabelan awal. Dengan demikian, NLP berpotensi menjadi alat strategis untuk mengekstraksi wawasan kebijakan (policy intelligence) dari data teks berskala besar secara efisien.</p>
+
+### 3. Topic Modeling: Latent Dirichlet Allocation (LDA)
+<p align="justify">Latent Dirichlet Allocation (LDA) merupakan algoritma topic modeling probabilistik yang paling banyak digunakan dalam analisis teks [5]. LDA memodelkan setiap dokumen sebagai campuran beberapa topik, dan setiap topik sebagai distribusi probabilitas kata. Keunggulan utama LDA terletak pada kesederhanaan, interpretabilitas, serta kemampuannya dalam menangkap struktur topik global dalam korpus teks [6].
+Sejumlah penelitian menggunakan LDA untuk menganalisis dokumen kebijakan, laporan pemerintah, dan berita daring [7, 8, 9]. Namun, literatur juga mencatat beberapa keterbatasan LDA, terutama dalam korpus berbahasa Indonesia. LDA sangat bergantung pada frekuensi kemunculan kata dan tidak mempertimbangkan konteks semantik [7], sehingga sering menghasilkan topik yang ambigu, tumpang tindih, atau sulit diinterpretasikan ketika kata-kata kunci tidak muncul secara berdampingan [10].
+Keterbatasan ini menjadi semakin signifikan ketika LDA digunakan untuk menganalisis isu kebijakan publik yang kompleks, di mana makna sering kali tersirat dalam struktur kalimat dan hubungan antar kata, bukan sekadar ko-eksistensi kata. </p>
+
+### 4. Model Bahasa Berbasis Transformer dan BERTopic
+<p align="justify">Perkembangan model bahasa berbasis Transformer, seperti BERT, telah membawa lompatan besar dalam pemrosesan bahasa alami. Model ini menggunakan mekanisme self-attention untuk memahami hubungan kontekstual antar kata dalam sebuah kalimat, sehingga mampu menangkap makna yang lebih dalam dibandingkan pendekatan berbasis frekuensi [11, 12].
+BERTopic merupakan framework topic modeling modern yang menggabungkan embedding kontekstual berbasis Transformer dengan teknik reduksi dimensi (UMAP) dan klasterisasi berbasis densitas (HDBSCAN). Pendekatan ini memungkinkan pembentukan topik yang lebih koheren secara semantik dan adaptif terhadap variasi struktur teks [13].
+Penelitian terdahulu menunjukkan bahwa BERTopic unggul dalam menangkap topik yang lebih bermakna pada data teks kompleks. Namun, literatur juga mencatat kelemahan BERTopic, yaitu ketidakstabilan jumlah topik dan kecenderungan menghasilkan terlalu banyak klaster kecil, terutama ketika diterapkan tanpa kontrol struktural yang memadai. </p>
+
+### 5. Model Bahasa Spesifik Domain: IndoGovBERT
+<p align="justify">Model bahasa spesifik domain dikembangkan untuk meningkatkan performa NLP pada konteks tertentu. IndoGovBERT merupakan model Transformer yang dilatih dan di-fine-tune pada korpus pemerintahan dan kebijakan publik Indonesia [14]. Dengan demikian, model ini memiliki sensitivitas yang lebih baik terhadap istilah birokrasi, regulasi, anggaran, dan tata kelola pemerintahan [15].
+Literatur menunjukkan bahwa domain-specific language models mampu meningkatkan kualitas representasi semantik dibandingkan model bahasa umum ketika diaplikasikan pada domain yang sesuai [16]. Dalam konteks analisis kebijakan publik dan pengawasan hukum, IndoGovBERT menawarkan keunggulan dalam memahami nuansa terminologi hukum dan administratif yang sering kali tidak tertangkap oleh model bahasa umum.
+
+### 6. Pendekatan Hybrid dalam Topic Modeling
+<p align="justify">Pendekatan hybrid dalam topic modeling muncul sebagai respons terhadap keterbatasan model tunggal [9]. Model probabilistik seperti LDA unggul dalam stabilitas struktur topik [7, 8], sementara model berbasis Transformer unggul dalam pemahaman semantik [11, 12]. Integrasi kedua pendekatan ini bertujuan untuk memperoleh the best of both worlds.
+Beberapa penelitian telah mengeksplorasi pendekatan semi-supervised atau guided topic modeling, di mana hasil model statistik digunakan untuk membimbing proses klasterisasi berbasis embedding [17]. Pendekatan ini terbukti mampu meningkatkan koherensi topik sekaligus menjaga konsistensi jumlah topik.
+Namun, penerapan arsitektur hybrid dalam konteks pengawasan hukum keamanan pangan, khususnya pada program nasional di Indonesia, masih sangat terbatas. Hal ini menunjukkan adanya peluang penelitian yang signifikan untuk mengembangkan metodologi pengawasan berbasis data teks.
+
+### 7. Kerangka Analisis PESTLE dalam Evaluasi Kebijakan
+<p align="justify">PESTLE merupakan kerangka analisis strategis yang digunakan untuk mengevaluasi faktor eksternal yang memengaruhi kebijakan atau organisasi, meliputi aspek Political, Economic, Social, Technological, Legal, dan Environmental [18]. Kerangka ini banyak digunakan dalam studi kebijakan dan analisis bisnis karena mampu memberikan pandangan holistik terhadap risiko dan peluang.
+Dalam penelitian ini, PESTLE digunakan sebagai lensa interpretatif untuk memetakan topik hasil modeling ke dalam dimensi kebijakan yang relevan. Integrasi topic modeling dengan kerangka PESTLE memungkinkan analisis isu kebijakan secara sistematis dan berbasis data, sehingga mendukung pengambilan keputusan yang lebih terstruktur. </p>
+
+### 8. Research Gap dan Posisi Penelitian
+<p align="justify">Berdasarkan tinjauan literatur, terdapat beberapa kesenjangan penelitian yang dapat diidentifikasi. Pertama, sebagian besar studi NLP dalam kebijakan publik masih berfokus pada analisis sentimen atau model topik konvensional yang kurang mampu menangkap konteks semantik yang kompleks [9, 10, 19]. Kedua, pemanfaatan model bahasa modern berbasis Transformer dalam pengawasan hukum keamanan pangan masih sangat terbatas [4, 20]. Ketiga, belum banyak penelitian yang mengintegrasikan pendekatan hybrid topic modeling dengan kerangka analisis strategis seperti PESTLE [13, 21].
+Penelitian ini memposisikan diri untuk mengisi kesenjangan tersebut dengan mengusulkan pendekatan Hybrid LDA-Guided BERTopic berbasis IndoGovBERT untuk analisis isu Program Makan Bergizi Gratis. Dengan demikian, penelitian ini berkontribusi pada pengembangan metodologi pengawasan kebijakan publik berbasis NLP yang bersifat preventif, interpretatif, dan relevan secara kontekstual.</p>
+
+---
 
 ## 🔬 Metodologi
 
@@ -225,6 +269,31 @@ Dimensi sosial didominasi oleh isu krusial mengenai keselamatan penerima manfaat
 ### Rangkuman Temuan Strategis
 Penerapan Hybrid Topic Modeling terbukti mampu mengurai kompleksitas isu Program Makan Bergizi Gratis dengan tingkat akurasi yang tinggi. Dari perspektif hukum keamanan pangan, temuan paling krusial adalah kemampuan model mendeteksi pola insiden keracunan berulang (Topik #6) dan anomali pengelolaan dana yayasan (Topik #12) secara otomatis tanpa intervensi manusia.
 Hal ini menegaskan bahwa pendekatan komputasional dapat menjadi instrumen pendukung (supporting instrument) yang valid bagi Badan Gizi Nasional maupun aparat penegak hukum dalam melakukan pengawasan preventif, melengkapi metode pengawasan konvensional yang ada saat ini.
+
+---
+
+## 📚 Referensi
+[1] A. Suadi, Sistem Pengawasan Badan Peradilan di Indonesia, vol. 1. Depok: Rajawali Pers, 2014. Accessed: Dec. 18, 2025. [Online]. Available: https://www.google.co.id/books/edition/Sistem_Pengawasan_Badan_Peradilan_di_Ind/R_cbEAAAQBAJ?hl=id&gbpv=1&dq=pengawasan+preventif+yaitu&pg=PA21&printsec=frontcover
+[2] W. Budiharto, D. Suhartono, and V. Andreas, DEEP LEARNING : Konsep dan Penerapannya, 1st ed. Yogyakarta: Penerbit ANDI, 2025. Accessed: Dec. 18, 2025. [Online]. Available: https://books.google.co.id/books?id=B9CcEQAAQBAJ&newbks=0&printsec=frontcover&pg=PA129&dq=Natural+Language+Processing+(NLP)+merupakan&hl=id&source=newbks_fb&redir_esc=y#v=onepage&q=Natural%20Language%20Processing%20(NLP)%20merupakan&f=false
+[3] I. Abdurrohim and A. Rahman, “PENERAPAN NATURAL LANGUAGE PROCESSING UNTUK ANALISIS SENTIMEN TERHADAP KEBIJAKAN PEMERINTAH,” JURNAL KEBANGSAAN RI, vol. 1, no. 2, pp. 55–60, May 2024, doi: 10.31848/JKRI.V1I2.3403.
+[4] I. Chalkidis, I. Androutsopoulos, and N. Aletras, “Neural Legal Judgment Prediction in English,” ACL 2019 - 57th Annual Meeting of the Association for Computational Linguistics, Proceedings of the Conference, pp. 4317–4323, June 2019, doi: 10.18653/v1/p19-1424.
+[5] A. Nugroho, DATA SCIENCE MENGGUNAKAN BAHASA R, 1st ed. Yogyakarta: Penerbit ANDI, 2022.
+[6] A. Permana, Computational Intelligence, 1st ed. EduGorilla Community Pvt. Ltd., 2008. Accessed: Dec. 18, 2025. [Online]. Available: https://www.google.co.id/books/edition/Computational_Intelligence/SgiSEQAAQBAJ?hl=id&gbpv=0
+[7] D. M. Blei, A. Y. Ng, and J. B. Edu, “Latent Dirichlet Allocation Michael I. Jordan,” Journal of Machine Learning Research, vol. 3, pp. 993–1022, 2003.
+[8] M. E. Roberts et al., “Structural topic models for open-ended survey responses,” Am J Pol Sci, vol. 58, no. 4, pp. 1064–1082, Oct. 2014, doi: 10.1111/AJPS.12103;WGROUP:STRING:PUBLICATION.
+[9] J. Grimmer and B. M. Stewart, “Text as Data: The Promise and Pitfalls of Automatic Content Analysis Methods for Political Texts,” Political Analysis, vol. 21, no. 3, pp. 267–297, 2013, doi: 10.1093/PAN/MPS028.
+[10] J. Chang, J. Boyd-Graber, S. Gerrish, C. Wang, and D. M. Blei, “Reading Tea Leaves: How Humans Interpret Topic Models,” Adv Neural Inf Process Syst, vol. 22, 2009, Accessed: Dec. 18, 2025. [Online]. Available: http://rexa.info
+[11] N. Reimers and I. Gurevych, “Alternative Weighting Schemes for ELMo Embeddings,” Apr. 2019, Accessed: Dec. 18, 2025. [Online]. Available: https://arxiv.org/pdf/1904.02954
+[12] J. Devlin, M.-W. Chang, K. Lee, K. T. Google, and A. I. Language, “BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding,” Proceedings of the 2019 Conference of the North, pp. 4171–4186, 2019, doi: 10.18653/V1/N19-1423.
+[13] M. Grootendorst, “BERTopic: Neural topic modeling with a class-based TF-IDF procedure,” Mar. 2022, Accessed: Dec. 18, 2025. [Online]. Available: https://arxiv.org/pdf/2203.05794
+[14] A. Riyadi, M. Kovacs, U. Serdült, and V. Kryssanov, “IndoGovBERT: A Domain-Specific Language Model for Processing Indonesian Government SDG Documents,” Big Data and Cognitive Computing 2024, Vol. 8, Page 153, vol. 8, no. 11, p. 153, Nov. 2024, doi: 10.3390/BDCC8110153.
+[15] S. Gururangan et al., “Don’t Stop Pretraining: Adapt Language Models to Domains and Tasks,” Proceedings of the Annual Meeting of the Association for Computational Linguistics, pp. 8342–8360, Apr. 2020, doi: 10.18653/v1/2020.acl-main.740.
+[16] I. Chalkidis, M. Fergadiotis, P. Malakasiotis, N. Aletras, and I. Androutsopoulos, “LEGAL-BERT: The Muppets straight out of Law School,” Findings of the Association for Computational Linguistics Findings of ACL: EMNLP 2020, pp. 2898–2904, Oct. 2020, doi: 10.18653/v1/2020.findings-emnlp.261.
+[17] M. Grootendorst, “BERTopic: Neural topic modeling with a class-based TF-IDF procedure,” Mar. 2022, Accessed: Dec. 18, 2025. [Online]. Available: https://arxiv.org/pdf/2203.05794
+[18] A. Permana, Business Planning and Development Research, 1st ed. EduGorilla Community Pvt. Ltd., 2008. Accessed: Dec. 18, 2025. [Online]. Available: https://www.google.co.id/books/edition/Business_Planning_and_Development_Resear/8AySEQAAQBAJ?hl=id&gbpv=0
+[19] A. Balahur et al., “Sentiment Analysis in the News,” Proceedings of the 7th International Conference on Language Resources and Evaluation, LREC 2010, pp. 2216–2220, Sept. 2013, Accessed: Dec. 18, 2025. [Online]. Available: https://arxiv.org/pdf/1309.6202
+[20] Ashley, K. D. (2017). Artificial intelligence and legal analytics: new tools for law practice in the digital age. Cambridge University Press.
+[21] Johnson, W. Scholes et. al.(2017):“Exploring Strategy”.
 
 ---
 
